@@ -17,3 +17,9 @@
 using--> git clone <'git hub url'>
 --> if any changes: git add text.txt-->then commit
 -->then push -->git push
+
+---> using gh we can create the repository in github using our local terminal
+gh repo create
+
+
+
