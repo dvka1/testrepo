@@ -10,3 +10,5 @@
 -->Push file to remote repo: git push // git remote add test(filename) <url of the repository>
 --> git push test
 --> password: token // we can take the token from the githut settings -->developer settings-->personal access tokens-->generate token
+
+--> test:
