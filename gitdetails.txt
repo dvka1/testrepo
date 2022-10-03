@@ -1,0 +1,12 @@
+ To push a file from our local repository to remote or github , Do the following :
+
+--> 1st make a directory
+--> put the file on it// eg: test.txt
+--> inside the directory create alocal repo, otherwise git commands willnot get execute, git init
+-->Then git add text.txt // it will go to working stage to staging stage
+--> check git status.
+--> Also commit the text./ git commit -m "commit message"
+--> Then push our file to the remote git repository. so create a repository on github 1st://also we can create repository through our system//
+-->Push file to remote repo: git push // git remote add test(filename) <url of the repository>
+--> git push test
+--> password: token // we can take the token from the githut settings -->developer settings-->personal access tokens-->generate token
