@@ -18,8 +18,20 @@ using--> git clone <'git hub url'>
 --> if any changes: git add text.txt-->then commit
 -->then push -->git push
 
----> using gh we can create the repository in github using our local terminal
-gh repo create
+---> using gh we can create the repository in github using our local terminal:
+-->gh repo create
 
+-->When we want to go back to history:
+1st--> git log --oneline //shows every commit and its checksum//
+--> git checkout <checksum> //go to that previous version.
 
+-->git checkout HEAD filename// if the file removed and we need to go to the previous version 
 
+but once we gone to the previos version we cant come back to our last modified one. so here we introduce the branching system.
+--> Branching:
+git checkout -b remix // So for branching 1st we need to create a branch:
+then add and commit all the current (master) file. then checkout master --> git checkout master.
+
+git merge remix.// it will merge master with remix.
+
+then checkout to remix --> git checkout remix// also add and commit all files in it. then second time we access the remix we need to merge all the content of master to the remix so, --> git merge master //
