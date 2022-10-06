@@ -46,8 +46,10 @@ git merge remix.// it will merge master with remix.
 
 then checkout to remix --> git checkout remix// also add and commit all files in it. then second time we access the remix we need to merge all the content of master to the remix so, --> git merge master //
 
+-->Tagging:
 
+we can create tag by using :
+--> git tag v1 //v1, tag name
+--> to show tag // git show v1
 
-
-
-tag deltedd
+Tags are ref's that point to specific points in Git history. Tagging is generally used to capture a point in history 
