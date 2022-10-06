@@ -45,3 +45,7 @@ then add and commit all the current (master) file. then checkout master --> git 
 git merge remix.// it will merge master with remix.
 
 then checkout to remix --> git checkout remix// also add and commit all files in it. then second time we access the remix we need to merge all the content of master to the remix so, --> git merge master //
+
+
+
+y tag not showing
