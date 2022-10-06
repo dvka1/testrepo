@@ -22,16 +22,26 @@ using--> git clone <'git hub url'>
 -->gh repo create
 
 -->When we want to go back to history:
-1st--> git log --oneline //shows every commit and its checksum//
---> git checkout <checksum> //go to that previous version.
+1st--> git log --oneline filename //shows every commit and its checksum//
+--> git checkout <checksum> filename //go to that previous version.
 
 -->git checkout HEAD filename// if the file removed and we need to go to the previous version 
 
-but once we gone to the previos version we cant come back to our last modified one. so here we introduce the branching system.
+--> if we want to change the commit message we can ammend it: git commit --amend -m "New commit message."
+
+To modify a specific commit: For example, to modify commit bbc643cd, run:
+--> git rebase --interactive 'bbc643cd^'. the caret ^ at the end of the command, because you need actually to rebase back to the commit before the one you wish to modify.
+
+In the default editor, modify pick to edit in the line mentioning bbc643cd. Make your changes and then commit them with the command:
+--> git commit --all --amend --no-edit
+
+After that, return back to the previous HEAD commit using:
+
+-->git rebase --continue
+
 --> Branching:
 git checkout -b remix // So for branching 1st we need to create a branch:
 then add and commit all the current (master) file. then checkout master --> git checkout master.
-
 git merge remix.// it will merge master with remix.
 
 then checkout to remix --> git checkout remix// also add and commit all files in it. then second time we access the remix we need to merge all the content of master to the remix so, --> git merge master //
